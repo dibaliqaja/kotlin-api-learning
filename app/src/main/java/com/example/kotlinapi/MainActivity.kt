@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<MainModel>, t: Throwable) {
-                    printLog(t.toString())
+                    printLog("onFailure: $t")
                 }
 
             })
